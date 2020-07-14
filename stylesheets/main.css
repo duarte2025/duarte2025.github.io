@@ -2,28 +2,30 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  #text {
-    background-color: rgb(35,39,65);
-    color: white;
-  }
+}
 
-  /* ----------------------
+#text {
+    background-color: rgb(35, 39, 65);
+    color: white;
+}
+
+
+/* ----------------------
       Timeline
   ------------------------*/
-  .wrap {
+
+.wrap {
     margin: 0 auto;
     max-width: 1040px;
     padding: 0 20px;
-  }
-  
-  header {
+}
+
+header {
     position: relative;
     z-index: 999;
-  }
-  
-  section {
+}
+
+section {
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -35,82 +37,90 @@
     transition: .5s ease;
     box-sizing: border-box;
     overflow: hidden;
-  }
-  
-  section.intro {
+}
+
+section.intro {
     text-align: center;
-  }
-  
-  section.intro h2,
-  section.intro h5 {
+}
+
+section.intro h2,
+section.intro h5 {
     font-weight: 300;
     margin-bottom: 10px;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: #222;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 8vw;
     font-family: serif;
     font-weight: bold;
-  }
-  
-  p {
+}
+
+p {
     line-height: 1.4;
     margin-bottom: 18px;
-  }
-  
-  .unselectable{
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-  }
+}
 
-  /* ----------------------
+.unselectable {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+
+/* ----------------------
     particales js
   ------------------------*/
-  #background-duarte {
+
+#background-duarte {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(35,39,65);
+    background-color: rgb(35, 39, 65);
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-  }
+}
 
-  /* ----------------------
+
+/* ----------------------
     name card
   ------------------------*/
-  .profile-card h1,
-  .profile-card h2 {
+
+.profile-card h1,
+.profile-card h2 {
     font-weight: 500;
     margin: 0px 0px 5px 0px;
-  }
-  
-  .profile-card h1 {
+}
+
+.profile-card h1 {
     font-size: 26px;
-  }
-  
-  .profile-card h2 {
+}
+
+.profile-card h2 {
     font-size: 16px;
-  }
-  
-  .profile-card p {
+}
+
+.profile-card p {
     margin: 0px;
-  }
-  
-  .profile-card {
+}
+
+.profile-card {
     background: #FFB300;
     width: 56px;
     height: 56px;
@@ -129,20 +139,20 @@
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
     -webkit-animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
     animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
-  }
-  
-  .profile-card header h1 {
+}
+
+.profile-card header h1 {
     color: #FF5722;
-  }
-  
-  .profile-card header a {
+}
+
+.profile-card header a {
     display: inline-block;
     text-align: center;
     position: relative;
     margin: 25px 30px;
-  }
-  
-  .profile-card header a:after {
+}
+
+.profile-card header a:after {
     position: absolute;
     content: "";
     bottom: 3px;
@@ -153,9 +163,9 @@
     transform: scale(0);
     -webkit-animation: scaleIn 0.3s 3.5s ease forwards;
     animation: scaleIn 0.3s 3.5s ease forwards;
-  }
-  
-  .profile-card header a > img {
+}
+
+.profile-card header a>img {
     width: 120px;
     max-width: 100%;
     -webkit-border-radius: 50%;
@@ -164,14 +174,14 @@
     transition: box-shadow 0.3s ease;
     -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
-  }
-  
-  .profile-card header a:hover > img {
+}
+
+.profile-card header a:hover>img {
     -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .profile-card .profile-bio {
+}
+
+.profile-card .profile-bio {
     width: 175px;
     height: 120px;
     display: inline-block;
@@ -184,260 +194,274 @@
     opacity: 0;
     -webkit-animation: moveIn 1s 3.1s ease forwards;
     animation: moveIn 1s 3.1s ease forwards;
-  }
-  
-  @-webkit-keyframes init {
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: #232741;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+@-webkit-keyframes init {
     0% {
-      width: 0px;
-      height: 0px;
+        width: 0px;
+        height: 0px;
     }
     100% {
-      width: 56px;
-      height: 56px;
-      margin-top: 0px;
-      opacity: 1;
+        width: 56px;
+        height: 56px;
+        margin-top: 0px;
+        opacity: 1;
     }
-  }
-  
-  @keyframes init {
+}
+
+@keyframes init {
     0% {
-      width: 0px;
-      height: 0px;
+        width: 0px;
+        height: 0px;
     }
     100% {
-      width: 56px;
-      height: 56px;
-      margin-top: 0px;
-      opacity: 1;
+        width: 56px;
+        height: 56px;
+        margin-top: 0px;
+        opacity: 1;
     }
-  }
-  
-  @-webkit-keyframes puff {
+}
+
+@-webkit-keyframes puff {
     0% {
-      top: 100%;
-      height: 0px;
-      padding: 0px;
+        top: 100%;
+        height: 0px;
+        padding: 0px;
     }
     100% {
-      top: 50%;
-      height: 100%;
-      padding: 0px 100%;
+        top: 50%;
+        height: 100%;
+        padding: 0px 100%;
     }
-  }
-  
-  @keyframes puff {
+}
+
+@keyframes puff {
     0% {
-      top: 100%;
-      height: 0px;
-      padding: 0px;
+        top: 100%;
+        height: 0px;
+        padding: 0px;
     }
     100% {
-      top: 50%;
-      height: 100%;
-      padding: 0px 100%;
+        top: 50%;
+        height: 100%;
+        padding: 0px 100%;
     }
-  }
-  
-  @-webkit-keyframes borderRadius {
+}
+
+@-webkit-keyframes borderRadius {
     0% {
-      -webkit-border-radius: 50%;
+        -webkit-border-radius: 50%;
     }
     100% {
-      -webkit-border-radius: 0px;
+        -webkit-border-radius: 0px;
     }
-  }
-  
-  @keyframes borderRadius {
+}
+
+@keyframes borderRadius {
     0% {
-      -webkit-border-radius: 50%;
+        -webkit-border-radius: 50%;
     }
     100% {
-      border-radius: 0px;
+        border-radius: 0px;
     }
-  }
-  
-  @-webkit-keyframes moveDown {
+}
+
+@-webkit-keyframes moveDown {
     0% {
-      top: 50%;
+        top: 50%;
     }
     50% {
-      top: 40%;
+        top: 40%;
     }
     100% {
-      top: 100%;
+        top: 100%;
     }
-  }
-  
-  @keyframes moveDown {
+}
+
+@keyframes moveDown {
     0% {
-      top: 50%;
+        top: 50%;
     }
     50% {
-      top: 40%;
+        top: 40%;
     }
     100% {
-      top: 100%;
+        top: 100%;
     }
-  }
-  
-  @-webkit-keyframes moveUp {
+}
+
+@-webkit-keyframes moveUp {
     0% {
-      background: #FFB300;
-      top: 100%;
+        background: #FFB300;
+        top: 100%;
     }
     50% {
-      top: 40%;
+        top: 40%;
     }
     100% {
-      top: 50%;
-      background: #E0E0E0;
+        top: 50%;
+        background: #E0E0E0;
     }
-  }
-  
-  @keyframes moveUp {
+}
+
+@keyframes moveUp {
     0% {
-      background: #FFB300;
-      top: 100%;
+        background: #FFB300;
+        top: 100%;
     }
     50% {
-      top: 40%;
+        top: 40%;
     }
     100% {
-      top: 50%;
-      background: #E0E0E0;
+        top: 50%;
+        background: #E0E0E0;
     }
-  }
-  
-  @-webkit-keyframes materia {
+}
+
+@-webkit-keyframes materia {
     0% {
-      background: #E0E0E0;
+        background: #E0E0E0;
     }
     50% {
-      -webkit-border-radius: 4px;
+        -webkit-border-radius: 4px;
     }
     100% {
-      width: 440px;
-      height: 280px;
-      background: #FFFFFF;
-      -webkit-border-radius: 4px;
+        width: 440px;
+        height: 280px;
+        background: #FFFFFF;
+        -webkit-border-radius: 4px;
     }
-  }
-  
-  @keyframes materia {
+}
+
+@keyframes materia {
     0% {
-      background: #E0E0E0;
+        background: #E0E0E0;
     }
     50% {
-      border-radius: 4px;
+        border-radius: 4px;
     }
     100% {
-      width: 440px;
-      height: 280px;
-      background: #FFFFFF;
-      border-radius: 4px;
+        width: 440px;
+        height: 280px;
+        background: #FFFFFF;
+        border-radius: 4px;
     }
-  }
-  
-  @-webkit-keyframes moveIn {
+}
+
+@-webkit-keyframes moveIn {
     0% {
-      margin-top: 50px;
-      opacity: 0;
+        margin-top: 50px;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
-      margin-top: -20px;
+        opacity: 1;
+        margin-top: -20px;
     }
-  }
-  
-  @keyframes moveIn {
+}
+
+@keyframes moveIn {
     0% {
-      margin-top: 50px;
-      opacity: 0;
+        margin-top: 50px;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
-      margin-top: -20px;
+        opacity: 1;
+        margin-top: -20px;
     }
-  }
-  
-  @-webkit-keyframes scaleIn {
+}
+
+@-webkit-keyframes scaleIn {
     0% {
-      -webkit-transform: scale(0);
+        -webkit-transform: scale(0);
     }
     100% {
-      -webkit-transform: scale(1);
+        -webkit-transform: scale(1);
     }
-  }
-  
-  @keyframes scaleIn {
+}
+
+@keyframes scaleIn {
     0% {
-      transform: scale(0);
+        transform: scale(0);
     }
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  @-webkit-keyframes ripple {
+}
+
+@-webkit-keyframes ripple {
     0% {
-      transform: scale3d(0, 0, 0);
+        transform: scale3d(0, 0, 0);
     }
     50%,
     100% {
-      -webkit-transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
     }
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  @keyframes ripple {
+}
+
+@keyframes ripple {
     0% {
-      transform: scale3d(0, 0, 0);
+        transform: scale3d(0, 0, 0);
     }
     50%,
     100% {
-      transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  @media screen and (min-aspect-ratio: 4/3) {
+}
+
+@media screen and (min-aspect-ratio: 4/3) {
     body {
-      background-size: cover;
+        background-size: cover;
     }
     body:before {
-      width: 0px;
+        width: 0px;
     }
     @ -webkit-keyframes puff {
-      0% {
-        top: 100%;
-        width: 0px;
-        padding-bottom: 0px;
-      }
-      100% {
-        top: 50%;
-        width: 100%;
-        padding-bottom: 100%;
-      }
+        0% {
+            top: 100%;
+            width: 0px;
+            padding-bottom: 0px;
+        }
+        100% {
+            top: 50%;
+            width: 100%;
+            padding-bottom: 100%;
+        }
     }
     @keyframes puff {
-      0% {
-        top: 100%;
-        width: 0px;
-        padding-bottom: 0px;
-      }
-      100% {
-        top: 50%;
-        width: 100%;
-        padding-bottom: 100%;
-      }
+        0% {
+            top: 100%;
+            width: 0px;
+            padding-bottom: 0px;
+        }
+        100% {
+            top: 50%;
+            width: 100%;
+            padding-bottom: 100%;
+        }
     }
-  }
-  
-  .profile-card header {
+}
+
+.profile-card header {
     width: auto;
     height: 260px;
     top: 20px;
@@ -445,45 +469,48 @@
     display: block;
     float: none;
     border-right: none;
-  }
-  .profile-card .profile-bio {
+}
+
+.profile-card .profile-bio {
     width: auto;
     height: auto;
     padding: 55px 20px 35px;
     display: block;
     float: none;
-  }
-  .profile-social-links {
+}
+
+.profile-social-links {
     width: 100%;
     display: block;
     float: none;
-  }
-  @-webkit-keyframes materia {
+}
+
+@-webkit-keyframes materia {
     0% {
-      background: #E0E0E0;
+        background: #E0E0E0;
     }
     50% {
-      -webkit-border-radius: 4px;
+        -webkit-border-radius: 4px;
     }
     100% {
-      width: 260px;
-      height: 420px;
-      background: #FFFFFF;
-      -webkit-border-radius: 4px;
+        width: 260px;
+        height: 420px;
+        background: #FFFFFF;
+        -webkit-border-radius: 4px;
     }
-  }
-  @keyframes materia {
+}
+
+@keyframes materia {
     0% {
-      background: #E0E0E0;
+        background: #E0E0E0;
     }
     50% {
-      border-radius: 4px;
+        border-radius: 4px;
     }
     100% {
-      width: 260px;
-      height: 420px;
-      background: #FFFFFF;
-      border-radius: 4px;
+        width: 260px;
+        height: 420px;
+        background: #FFFFFF;
+        border-radius: 4px;
     }
-  }
-  
+}
