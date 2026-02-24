@@ -70,6 +70,7 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   box-shadow: 0 0 0 4px var(--border-color);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
