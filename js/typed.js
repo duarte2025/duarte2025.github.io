@@ -1,15 +1,28 @@
-let aboutStrings = [
+const aboutStrings = [
   "software engineer",
+  "engineering manager",
   "lifelong learner",
   "problem solver",
-  "Scientist Enthusiast"
+  "science enthusiast"
 ];
 
-let options = {
+const options = {
   strings: aboutStrings,
-  typeSpeed: 100,
+  typeSpeed: 80,
+  backSpeed: 50,
+  backDelay: 1500,
   loop: true,
-  backDelay: 1200
+  cursorChar: '|'
 };
 
-let typed = new Typed("#text", options);
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.getElementById('text');
+  if (element && typeof Typed !== 'undefined') {
+    new Typed("#text", options);
+  } else {
+    console.error('Typed.js não carregou ou elemento #text não encontrado');
+    if (element) {
+      element.textContent = 'software engineer';
+    }
+  }
+});
